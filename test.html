@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset = "UTF-8">
+        <title>test</title>
+    </head>
+    <body>
+        <h1>タグテスト用html</h1>
+        <script>
+            var sNew = document.createElement("script");
+            sNew.async = true;
+            _id = "10001";
+            sNew.src  = "http://localhost:5000/entry.js?id="+_id;
+            //一番右にある数値はscriptが0始まりで上から何番目かというもの
+            var s0 = document.getElementsByTagName('script')[0];
+            s0.parentNode.insertBefore(sNew, s0);
+
+        </script>
+
+    </body>
+</html>
